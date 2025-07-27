@@ -47,7 +47,7 @@ if (service && services[service]) {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.setAttribute("content", services[service].desc);
 } else {
-  document.title = "Hizmet Bulunamadı | Beyaz Eşya Teknik Servisi";
+  document.title = "Beyaz Eşya Teknik Servisi";
   titleElem.textContent = "Hizmet Bulunamadı";
   descElem.textContent = "Belirtilen hizmet türü desteklenmiyor.";
 }
