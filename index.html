@@ -6,8 +6,8 @@
     <title>Beyaz Eşya Servisi | 7/24 Teknik Destek & Hızlı Onarım</title>
     <link rel="canonical" href="https://yigitmerterkalay.github.io/web_satis/">
     <meta name="description" content="Beyaz eşya, buzdolabı, çamaşır makinesi, kombi ve klima servisi için hemen arayın! İstanbul geneli hızlı, garantili tamir ve bakım hizmeti." />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
     <script type="application/ld+json">
         {
@@ -28,10 +28,63 @@
           "areaServed": "İstanbul",
           "sameAs": []
         }
-    </script> 
+
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Ana Sayfa",
+              "item": "https://yigitmerterkalay.github.io/web_satis/"
+            }
+          ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Servisiniz yetkili mi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hayır, yalnızca garantisi bitmiş cihazlara teknik servis hizmeti sunuyoruz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Hangi cihazlara hizmet veriyorsunuz?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Beyaz eşya, buzdolabı, çamaşır ve bulaşık makinesi, klima, kombi, fırın ve televizyonlara servis sağlıyoruz."
+              }
+            }
+          ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Beyaz Eşya Servisi",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "12"
+          }
+        }
+    </script>
 
     <style>
-
         body {
             font-family: sans-serif;
             margin: 0;
@@ -41,7 +94,7 @@
             position: relative;
         }
 
-        header, footer {
+        header {
             background-color: #0047ab;
             padding: 15px;
             text-align: center;
@@ -98,7 +151,6 @@
             box-shadow: none;
         }
 
-
         h1, h2 {
             color: #111;
         }
@@ -112,18 +164,6 @@
                 margin-bottom: 10px;
                 line-height: 1.5;
             }
-
-        footer a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
 
         .menu-container {
             display: flex;
@@ -186,7 +226,14 @@
             .dropdown.active .dropdown-content {
                 display: block;
             }
+
+            footer .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
+
         .yorumlar-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -202,84 +249,18 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.3);
             color: #fff;
         }
+
         @media (max-width: 768px) {
             .yorumlar-container {
                 grid-template-columns: 1fr;
             }
         }
-        footer {
-            color: white;
-        }
-
-            footer a {
-                color: #00c853;
-                text-decoration: underline;
-            }
-
-            footer strong {
-                color: white;
-            }
 
         .yorum-karti p:first-of-type {
             color: gold;
             font-size: 20px;
         }
-        footer h3 {
-            color: #002b5c;
-            margin-bottom: 10px;
-        }
 
-        footer a {
-            text-decoration: none;
-            color: #002b5c;
-            display: block;
-            margin-bottom: 5px;
-            transition: color 0.3s;
-        }
-
-            footer a:hover {
-                color: #00a651;
-            }
-        footer .iletisim p {
-            color: #002b5c;
-        }
-        @media (max-width: 768px) {
-            footer > div {
-                flex-direction: column !important;
-                align-items: center !important;
-                text-align: center !important;
-                gap: 30px !important;
-            }
-
-            footer .iletisim,
-            footer div ul {
-                text-align: center !important;
-            }
-        }
-        @media (max-width: 768px) {
-            #hizmetler > div > div {
-                width: 90% !important;
-                max-width: 320px;
-            }
-        }
-        .arama-buton {
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background: #007bff;
-            padding: 14px 26px;
-            border-radius: 40px;
-            text-decoration: none;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-            transition: background 0.3s;
-            box-shadow: none;
-            border: 1px solid #ccc;
-        }
-
-            .arama-buton:hover {
-                background: #0056b3;
-            }
         .yorumlar-slider {
             display: flex;
             align-items: center;
@@ -327,6 +308,24 @@
             .yorum-ok:hover {
                 background: #0056b3;
             }
+
+        .arama-buton {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #007bff;
+            padding: 14px 26px;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: background 0.3s;
+            border: 1px solid #ccc;
+        }
+
+            .arama-buton:hover {
+                background: #0056b3;
+            }
+
         .neden-biz {
             max-width: 800px;
             margin: 60px auto 40px auto;
@@ -349,8 +348,58 @@
                 line-height: 1.6;
             }
 
+        footer {
+            background-color: #f9f9f9;
+            padding: 40px 20px 20px 20px;
+            color: #002b5c;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
 
+            footer .footer-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin: 0 auto;
+                gap: 40px;
+            }
+
+            footer h3 {
+                color: #002b5c;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+            footer a {
+                color: #002b5c;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 8px;
+                transition: color 0.3s ease;
+            }
+
+                footer a:hover {
+                    color: #00a651;
+                }
+
+            footer .iletisim p {
+                margin: 6px 0;
+                color: #002b5c;
+            }
+
+            footer .footer-bottom {
+                text-align: center;
+                font-size: 14px;
+                margin-top: 40px;
+                color: #333;
+            }
+
+                footer .footer-bottom p {
+                    margin: 5px 0;
+                }
     </style>
+
 </head>
 <body>
     <header>
