@@ -38,13 +38,11 @@
             background: none;
             position: relative;
         }
-
         header, footer {
-            background: #f1f1f1;
-            padding: 1rem;
+            background-color: #0047ab;
+            padding: 15px;
             text-align: center;
         }
-
         nav a {
             margin: 0 10px;
             text-decoration: none;
@@ -61,58 +59,6 @@
                 margin: 10px 0;
             }
         }
-
-        footer {
-            background-color: #f9f9f9;
-            padding: 40px 20px 20px 20px;
-            color: #002b5c;
-            font-family: sans-serif;
-            font-size: 15px;
-        }
-
-            footer .footer-container {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                max-width: 1200px;
-                margin: 0 auto;
-                gap: 40px;
-            }
-
-            footer h3 {
-                color: #002b5c;
-                margin-bottom: 15px;
-                font-size: 18px;
-            }
-
-            footer a {
-                color: #002b5c;
-                text-decoration: none;
-                display: block;
-                margin-bottom: 8px;
-                transition: color 0.3s ease;
-            }
-
-                footer a:hover {
-                    color: #00a651;
-                }
-
-            footer .iletisim p {
-                margin: 6px 0;
-                color: #002b5c;
-            }
-
-            footer .footer-bottom {
-                text-align: center;
-                font-size: 14px;
-                margin-top: 40px;
-                color: #333;
-            }
-
-                footer .footer-bottom p {
-                    margin: 5px 0;
-                }
-
         .icerik-kapsayici {
             max-width: 850px;
             margin: 0 auto;
@@ -228,133 +174,180 @@
                 display: block;
             }
         }
+        footer {
+            color: white;
+        }
+
+            footer strong {
+                color: white;
+            }
+
+        .yorum-karti p:first-of-type {
+            color: gold;
+            font-size: 20px;
+        }
+
+        footer h3 {
+            color: #002b5c;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #002b5c;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+            footer a:hover {
+                color: #00a651;
+            }
+
+        footer .iletisim p {
+            color: #002b5c;
+        }
+
+        @media (max-width: 768px) {
+            footer > div {
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+                gap: 30px !important;
+            }
+
+            footer .iletisim,
+            footer div ul {
+                text-align: center !important;
+            }
+        }
     </style>
 </head>
 
 <body>
-        <header>
-            <div class="menu-container">
-                <div class="logo">Teknik Servis</div>
-                <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-                <nav id="navbar">
-                    <a href="index.html">Ana Sayfa</a>
-                    <div class="dropdown">
-                        <a href="#">Hizmetlerimiz ▾</a>
-                        <div class="dropdown-content">
-                            <a href="hizmet.html?service=Beyaz+Eşya+Servisi">Beyaz Eşya Servisi</a>
-                            <a href="hizmet.html?service=Buzdolabı">Buzdolabı</a>
-                            <a href="hizmet.html?service=Çamaşır+Makinesi">Çamaşır Makinesi</a>
-                            <a href="hizmet.html?service=Bulaşık+Makinesi">Bulaşık Makinesi</a>
-                            <a href="hizmet.html?service=Fırın">Fırın</a>
-                            <a href="hizmet.html?service=Klima">Klima</a>
-                            <a href="hizmet.html?service=Kombi">Kombi</a>
-                            <a href="hizmet.html?service=Televizyon">Televizyon</a>
-                        </div>
+    <header>
+        <div class="menu-container">
+            <div class="logo">Teknik Servis</div>
+            <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+            <nav id="navbar">
+                <a href="index.html">Ana Sayfa</a>
+                <div class="dropdown">
+                    <a href="#">Hizmetlerimiz ▾</a>
+                    <div class="dropdown-content">
+                        <a href="hizmet.html?service=Beyaz+Eşya+Servisi">Beyaz Eşya Servisi</a>
+                        <a href="hizmet.html?service=Buzdolabı">Buzdolabı</a>
+                        <a href="hizmet.html?service=Çamaşır+Makinesi">Çamaşır Makinesi</a>
+                        <a href="hizmet.html?service=Bulaşık+Makinesi">Bulaşık Makinesi</a>
+                        <a href="hizmet.html?service=Fırın">Fırın</a>
+                        <a href="hizmet.html?service=Klima">Klima</a>
+                        <a href="hizmet.html?service=Kombi">Kombi</a>
+                        <a href="hizmet.html?service=Televizyon">Televizyon</a>
                     </div>
-                    <a href="hakkimizda.html">Hakkımızda</a>
-                    <a href="iletisim.html">İletişim</a>
-                </nav>
-            </div>
-        </header>
+                </div>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <h1 style="text-align: center; font-size: 2.2em; color: #0047ab;">KVKK</h1>
+    <main>
+        <h1 style="text-align: center; font-size: 2.2em; color: #0047ab;">KVKK</h1>
 
-            <div class="icerik-kapsayici">
-                <section style="display: flex; flex-direction: column; gap: 30px;">
+        <div class="icerik-kapsayici">
+            <section style="display: flex; flex-direction: column; gap: 30px;">
 
-                    <div style="padding: 20px 25px; background: #f1f5fb; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-                        <h3 style="color: #0047ab; font-size: 1.5em; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">Veri Sorumlusu Hakkında</h3>
-                        <p style="line-height: 1.7; color: #333;">
-                            Bu aydınlatma metni, Beyaz Eşya Servisi ("Servis") tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, kullanıcıların kişisel verilerinin işlenmesine ilişkin bilgilendirme amacıyla hazırlanmıştır.
-                        </p>
-                    </div>
-                    <div style="padding: 20px 25px; background: #f1f5fb; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-                        <h3 style="color: #0047ab; font-size: 1.5em; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">İşlenen Kişisel Veriler</h3>
-                        <p style="line-height: 1.7; color: #333;">
-                            Web sitemiz üzerinden herhangi bir kullanıcı verisi otomatik olarak toplanmamaktadır. Herhangi bir form, üyelik veya yorum sistemi bulunmamaktadır.
-                            Ancak kullanıcıların bize telefon veya e-posta yoluyla ulaşmaları durumunda, tarafımıza ilettikleri bilgiler (ad-soyad, telefon numarası, e-posta vb.) yalnızca iletişim amaçlı kullanılmakta ve üçüncü kişilerle paylaşılmamaktadır.
-                        </p>
-                    </div>
-                    <div style="padding: 20px 25px; background: #f1f5fb; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-                        <h3 style="color: #0047ab; font-size: 1.5em; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">KVKK Kapsamındaki Haklarınız</h3>
-                        <ul style="line-height: 1.7; color: #333;">
-                            KVKK’nın 11. maddesi uyarınca kullanıcılar:
+                <div style="padding: 20px 25px; background: #f1f5fb; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                    <h3 style="color: #0047ab; font-size: 1.5em; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">Veri Sorumlusu Hakkında</h3>
+                    <p style="line-height: 1.7; color: #333;">
+                        Bu aydınlatma metni, Beyaz Eşya Servisi ("Servis") tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, kullanıcıların kişisel verilerinin işlenmesine ilişkin bilgilendirme amacıyla hazırlanmıştır.
+                    </p>
+                </div>
+                <div style="padding: 20px 25px; background: #f1f5fb; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                    <h3 style="color: #0047ab; font-size: 1.5em; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">İşlenen Kişisel Veriler</h3>
+                    <p style="line-height: 1.7; color: #333;">
+                        Web sitemiz üzerinden herhangi bir kullanıcı verisi otomatik olarak toplanmamaktadır. Herhangi bir form, üyelik veya yorum sistemi bulunmamaktadır.
+                        Ancak kullanıcıların bize telefon veya e-posta yoluyla ulaşmaları durumunda, tarafımıza ilettikleri bilgiler (ad-soyad, telefon numarası, e-posta vb.) yalnızca iletişim amaçlı kullanılmakta ve üçüncü kişilerle paylaşılmamaktadır.
+                    </p>
+                </div>
+                <div style="padding: 20px 25px; background: #f1f5fb; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                    <h3 style="color: #0047ab; font-size: 1.5em; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">KVKK Kapsamındaki Haklarınız</h3>
+                    <ul style="line-height: 1.7; color: #333;">
+                        KVKK’nın 11. maddesi uyarınca kullanıcılar:
 
-                            <li> Kişisel verilerinin işlenip işlenmediğini öğrenme</li>
+                        <li> Kişisel verilerinin işlenip işlenmediğini öğrenme</li>
 
-                            <li> İşlenmişse buna ilişkin bilgi talep etme</li>
+                        <li> İşlenmişse buna ilişkin bilgi talep etme</li>
 
-                            <li> amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+                        <li> amacına uygun kullanılıp kullanılmadığını öğrenme</li>
 
-                            <li> veya eksik verilerin düzeltilmesini isteme</li>
+                        <li> veya eksik verilerin düzeltilmesini isteme</li>
 
-                            <li> silinmesini veya yok edilmesini talep etme</li>
+                        <li> silinmesini veya yok edilmesini talep etme</li>
 
-                            <li> üçüncü kişilere aktarılmış olması durumunda bu kişileri bilgilendirme</li>
+                        <li> üçüncü kişilere aktarılmış olması durumunda bu kişileri bilgilendirme</li>
 
-                            <li> verilerin otomatik sistemlerce analiz edilmesi sonucu aleyhe çıkan durumlara itiraz etme</li>
+                        <li> verilerin otomatik sistemlerce analiz edilmesi sonucu aleyhe çıkan durumlara itiraz etme</li>
 
-                            <li> uğraması hâlinde zararının giderilmesini talep </li>
+                        <li> uğraması hâlinde zararının giderilmesini talep </li>
 
-                            haklarına sahiptir.
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <div style="position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); z-index: 1000;">
-                <a href="tel:08501234567" style="background-color: #0047ab; color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
-                    📞 Hemen Ara
-                </a>
-            </div>
-        </main>
-
-        <footer style="background-color: #f8f8f8; padding: 40px 0; font-family: sans-serif;">
-            <div style="display: flex; justify-content: center; align-items: flex-start; gap: 100px; max-width: 1200px; margin: 0 auto; text-align: left;">
-
-                <div style="flex: 1; min-width: 200px; margin: 10px;">
-                    <h3>Site Haritası</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="iletisim.html">İletişim</a></li>
-                        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
-                        <li><a href="kvkk.html">KVKK</a></li>
+                        haklarına sahiptir.
                     </ul>
                 </div>
+            </section>
+        </div>
 
-                <div style="flex: 1; min-width: 200px; margin: 10px;">
-                    <h3>Hizmetlerimiz</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="hizmet.html?service=Beyaz+Eşya+Servisi">Beyaz Eşya Servisi</a></li>
-                        <li><a href="hizmet.html?service=Buzdolabı">Buzdolabı</a></li>
-                        <li><a href="hizmet.html?service=Çamaşır+Makinesi">Çamaşır Makinesi</a></li>
-                        <li><a href="hizmet.html?service=Bulaşık+Makinesi">Bulaşık Makinesi</a></li>
-                        <li><a href="hizmet.html?service=Fırın">Fırın</a></li>
-                        <li><a href="hizmet.html?service=Klima">Klima</a></li>
-                        <li><a href="hizmet.html?service=Kombi">Kombi</a></li>
-                        <li><a href="hizmet.html?service=Televizyon">Televizyon</a></li>
-                    </ul>
-                </div>
+        <div style="position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); z-index: 1000;">
+            <a href="tel:08501234567" style="background-color: #0047ab; color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+                📞 Hemen Ara
+            </a>
+        </div>
+    </main>
 
-                <div class="iletisim" style="flex: 1.5; min-width: 200px; margin: 10px;">
-                    <h3>İletişim</h3>
-                    <p>İstanbul, Türkiye</p>
-                    <p>Tel: 0555 111 22 44</p>
-                    <p>example@gmail.com</p>
-                </div>
+    <footer style="background-color: #f8f8f8; padding: 40px 0; font-family: sans-serif;">
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 100px; max-width: 1200px; margin: 0 auto; text-align: left;">
+
+            <div style="flex: 1; min-width: 200px; margin: 10px;">
+                <h3>Site Haritası</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                    <li><a href="kvkk.html">KVKK</a></li>
+                </ul>
             </div>
 
-            <div style="text-align: center; padding-top: 20px; font-size: 14px; color: black;">
-                <p>Yetkili servis değiliz. Sadece garantisi bitmiş cihazlara hizmet sunmaktayız.</p>
-                <p>© 2025 Beyaz Eşya Servisi. Tüm hakları saklıdır.</p>
+            <div style="flex: 1; min-width: 200px; margin: 10px;">
+                <h3>Hizmetlerimiz</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="hizmet.html?service=Beyaz+Eşya+Servisi">Beyaz Eşya Servisi</a></li>
+                    <li><a href="hizmet.html?service=Buzdolabı">Buzdolabı</a></li>
+                    <li><a href="hizmet.html?service=Çamaşır+Makinesi">Çamaşır Makinesi</a></li>
+                    <li><a href="hizmet.html?service=Bulaşık+Makinesi">Bulaşık Makinesi</a></li>
+                    <li><a href="hizmet.html?service=Fırın">Fırın</a></li>
+                    <li><a href="hizmet.html?service=Klima">Klima</a></li>
+                    <li><a href="hizmet.html?service=Kombi">Kombi</a></li>
+                    <li><a href="hizmet.html?service=Televizyon">Televizyon</a></li>
+                </ul>
             </div>
-        </footer>
 
-        <script src="config.js"></script>
-        <script>
-            document.getElementById("firma-footer").innerText = siteConfig.companyName;
-        </script>
+            <div class="iletisim" style="flex: 1.5; min-width: 200px; margin: 10px;">
+                <h3>İletişim</h3>
+                <p>İstanbul, Türkiye</p>
+                <p>Tel: 0555 111 22 44</p>
+                <p>example@gmail.com</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding-top: 20px; font-size: 14px; color: black;">
+            <p>Yetkili servis değiliz. Sadece garantisi bitmiş cihazlara hizmet sunmaktayız.</p>
+            <p>© 2025 Beyaz Eşya Servisi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script>
+        document.getElementById("firma-footer").innerText = siteConfig.companyName;
+    </script>
 </body>
 </html>
